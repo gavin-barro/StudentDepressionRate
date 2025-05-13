@@ -2,7 +2,7 @@
 # Dataset: https://www.kaggle.com/datasets/adilshamim8/student-depression-dataset 
 
 library(readr)
-path <- Sys.getenv()
+path <- Sys.getenv(DIRECT_FILE_PATH)
 student_depression_dataset <- read_csv(path)
 View(student_depression_dataset)
 
